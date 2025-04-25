@@ -1,0 +1,35 @@
+body{
+  padding: 0%;
+  margin: auto;
+  display:flex;
+justify-content: center;
+text-align: center;
+background:whitesmoke;
+
+ 
+}
+a{
+  color: red;
+}
+#login{
+  
+  text-align: center;
+
+
+  
+}
+input {
+ 
+ 
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+a{
+  text-decoration: none;
+}
+button{
+  border-radius: 10px;
+   box-shadow: none;
+}
