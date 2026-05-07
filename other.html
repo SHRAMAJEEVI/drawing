@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Other Drawings Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .gallery-header {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 1.5rem;
+      background: white;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.7) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+    }
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+    .other-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: linear-gradient(45deg, #17a2b8, #6f42c1);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <a href="new.html" class="btn btn-light back-btn">
+    <i class="bi bi-arrow-left"></i> Back
+  </a>
+
+  <div class="container">
+    <div class="gallery-header text-center text-white">
+      <h1 class="display-4 fw-bold mb-3">
+        <i class="bi bi-stars"></i> Other Drawings
+      </h1>
+      <p class="lead">Unique and creative artwork from my collection</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #1</span>
+          <img src="o1.jpg" alt="Other Drawing 1" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 1</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #3</span>
+          <img src="o3.jpg" alt="Other Drawing 3" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 2</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #4</span>
+          <img src="o4.jpg" alt="Other Drawing 4" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 3</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #2</span>
+          <img src="o2.jpg" alt="Other Drawing 2" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 4</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #5</span>
+          <img src="o5.jpg" alt="Other Drawing 5" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 5</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #6</span>
+          <img src="o6.jpg" alt="Other Drawing 6" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 6</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #7</span>
+          <img src="o7.jpg" alt="Other Drawing 7" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 7</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #8</span>
+          <img src="o8.jpg" alt="Other Drawing 8" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 8</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #9</span>
+          <img src="o9.jpg" alt="Other Drawing 9" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 9</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #10</span>
+          <img src="o10.jpg" alt="Other Drawing 10" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 10</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #11</span>
+          <img src="o11.jpg" alt="Other Drawing 11" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 11</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #12</span>
+          <img src="o12.jpg" alt="Other Drawing 12" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 12</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="gallery-item">
+          <span class="other-badge">Art #13</span>
+          <img src="o13.jpg" alt="Other Drawing 13" class="img-fluid">
+          <div class="gallery-overlay">
+            <span class="text-white fw-bold">Creative Artwork 13</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5 mb-4">
+      <div class="alert alert-info" role="alert">
+        <i class="bi bi-palette"></i>
+        <strong>Amazing Creative Collection!</strong> Each piece tells a unique story.
+      </div>
+      <a href="new.html" class="btn btn-primary btn-lg">
+        <i class="bi bi-house"></i> Back to Portfolio
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
